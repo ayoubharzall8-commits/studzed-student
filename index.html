@@ -137,7 +137,6 @@
               class="bg-pink-500/10 hover:bg-pink-500/20 text-pink-600 dark:text-pink-400 border border-pink-500/20 font-extrabold py-2.5 px-3 rounded-xl text-center text-[11px] flex items-center justify-center gap-1.5 transition">
               <span>📸 إنستغرام studzed@</span>
             </a>
-            <!-- ضع رقم واتساب الإدارة بصيغة 213XXXXXXXXX مكان الرقم أدناه -->
             <a href="https://wa.me/213673795163?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AD%D8%B0%D9%81%20%D8%AD%D8%B3%D8%A7%D8%A8%D9%8A%20%D9%88%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA%D9%8A%20%D9%85%D9%86%20%D8%AA%D8%B7%D8%A8%D9%8A%D9%82%20%D8%B3%D8%AA%D9%88%D8%AF%D8%B2%D9%8A%D8%AF%20Studzed." target="_blank" rel="noopener noreferrer"
               class="bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 font-extrabold py-2.5 px-3 rounded-xl text-center text-[11px] flex items-center justify-center gap-1.5 transition">
               <span>💬 واتساب الإدارة</span>
@@ -193,7 +192,7 @@
     <!-- تبويب العروض -->
     <main id="tab-deals" class="p-4 space-y-4">
       
-      <!-- عرض الفلاش الديناميكي بتصميم جديد ومطور ومتجاوب (Responsive Flash Banner) -->
+      <!-- عرض الفلاش الديناميكي -->
       <div id="flash-banner-container" class="hidden">
         <div class="bg-gradient-to-br from-rose-600 via-pink-600 to-purple-700 rounded-3xl p-4 text-white shadow-xl relative overflow-hidden border border-white/10">
           <div class="absolute -top-10 -left-10 w-32 h-32 bg-white/10 rounded-full blur-xl pointer-events-none"></div>
@@ -213,7 +212,7 @@
         </div>
       </div>
 
-      <!-- قسم الشركاء الجدد المميزين (Horizontal Spotlight) -->
+      <!-- قسم الشركاء الجدد المميزين -->
       <div class="space-y-2">
         <div class="flex justify-between items-center px-1">
           <h3 class="font-extrabold text-xs text-slate-500 dark:text-slate-400 uppercase tracking-wider">🔥 شركاء جدد بالقرب منك</h3>
@@ -302,7 +301,6 @@
 
     <!-- تبويب التوفير وإيصالات المشاركة ولوحة الشرف -->
     <main id="tab-savings" class="p-4 hidden space-y-4">
-      <!-- بطاقة إجمالي التوفير + زر مشاركة الإجمالي -->
       <div class="bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-700 rounded-3xl p-6 text-white text-center shadow-lg relative overflow-hidden">
         <p class="text-xs text-indigo-200">مجموع ما وفرته باستخدام بطاقة ستودزيد</p>
         <h2 class="text-4xl font-black my-2"><span id="big-savings">0</span> <span class="text-lg font-normal">دج</span></h2>
@@ -312,10 +310,8 @@
         </button>
       </div>
 
-      <!-- أحدث عملية توفير ناجحة (شريط تم التوفير بنجاح ✅) -->
       <div id="latest-receipt-banner" class="hidden"></div>
 
-      <!-- سجل التوفيرات والإيصالات السابقة -->
       <div class="bg-white dark:bg-slate-900 p-5 rounded-3xl shadow-sm border border-slate-100 dark:border-slate-800 space-y-3">
         <div class="flex justify-between items-center">
           <div>
@@ -330,7 +326,6 @@
         </div>
       </div>
 
-      <!-- لوحة الشرف الطلابية الحية -->
       <div class="bg-white dark:bg-slate-900 p-5 rounded-3xl shadow-sm border border-slate-100 dark:border-slate-800 space-y-3">
         <div class="flex justify-between items-center">
           <div>
@@ -346,7 +341,7 @@
       </div>
     </main>
 
-    <!-- Bottom Sheet / Modal لتفاصيل العرض المحسنة -->
+    <!-- Bottom Sheet / Modal لتفاصيل العرض -->
     <div id="offer-modal" class="fixed inset-0 bg-slate-950/70 backdrop-blur-sm z-50 hidden flex items-end justify-center">
       <div class="bg-white dark:bg-slate-900 w-full max-w-md rounded-t-[2.5rem] p-6 space-y-4 shadow-2xl border-t border-slate-200 dark:border-slate-800 safe-bottom">
         <div class="w-12 h-1.5 bg-slate-300 dark:bg-slate-700 rounded-full mx-auto"></div>
@@ -372,9 +367,8 @@
       </div>
     </div>
 
-    <!-- ================= بطاقة إيصال التوفير القابلة للمشاركة (Instagram Story Share Card) ================= -->
+    <!-- ================= بطاقة إيصال التوفير القابلة للمشاركة ================= -->
     <div id="share-receipt-modal" class="fixed inset-0 bg-slate-950/85 backdrop-blur-md z-50 hidden flex flex-col items-center justify-center p-5">
-      <!-- البطاقة القابلة للتصوير (Screenshot Card) -->
       <div id="story-card-box" class="w-full max-w-[330px] bg-gradient-to-br from-indigo-600 via-purple-700 to-slate-900 rounded-[2rem] p-6 text-white shadow-2xl border border-white/20 relative overflow-hidden">
         <div class="absolute -top-12 -right-12 w-36 h-36 bg-emerald-400/20 rounded-full blur-2xl"></div>
         <div class="absolute -bottom-12 -left-12 w-36 h-36 bg-indigo-400/20 rounded-full blur-2xl"></div>
@@ -584,40 +578,40 @@
     }
 
     async function fetchAndEnterApp(phone) {
-  const btn = document.getElementById('login-submit-btn');
-  const msg = document.getElementById('login-msg');
-  if (msg) msg.classList.add('hidden');
-  if (btn) { btn.disabled = true; btn.textContent = "جاري التحقق..."; }
+      const btn = document.getElementById('login-submit-btn');
+      const msg = document.getElementById('login-msg');
+      if (msg) msg.classList.add('hidden');
+      if (btn) { btn.disabled = true; btn.textContent = "جاري التحقق..."; }
 
-  try {
-    const res = await fetch(`${API_URL}?action=loginStudent&phone=${encodeURIComponent(phone)}`);
-    if (!res.ok) throw new Error("HTTP " + res.status);
-    const rawText = await res.text();
-    const data = JSON.parse(rawText);
+      try {
+        const res = await fetch(`${API_URL}?action=loginStudent&phone=${encodeURIComponent(phone)}`);
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        const rawText = await res.text();
+        const data = JSON.parse(rawText);
 
-    if (data.status === "success") {
-      localStorage.setItem("studzed_phone", phone);
-      currentUser = data.student;
-      if (currentUser.account_status === "Active") {
-        initStudentDashboard();
-        showScreen("app");
-      } else {
-        showScreen("pending");
+        if (data.status === "success") {
+          localStorage.setItem("studzed_phone", phone);
+          currentUser = data.student;
+          if (currentUser.account_status === "Active") {
+            initStudentDashboard();
+            showScreen("app");
+          } else {
+            showScreen("pending");
+          }
+        } else {
+          if (msg) {
+            msg.textContent = "رقم الهاتف غير مسجل.";
+            msg.classList.remove('hidden');
+          }
+        }
+      } catch (err) {
+        if (msg) {
+          msg.textContent = "خطأ في الاتصال أو في استجابة السيرفر.";
+          msg.classList.remove('hidden');
+        }
       }
-    } else {
-      if (msg) {
-        msg.textContent = "رقم الهاتف غير مسجل.";
-        msg.classList.remove('hidden');
-      }
+      if (btn) { btn.disabled = false; btn.textContent = "دخول إلى حسابي"; }
     }
-  } catch (err) {
-    if (msg) {
-      msg.textContent = "خطأ في الاتصال أو في استجابة السيرفر.";
-      msg.classList.remove('hidden');
-    }
-  }
-  if (btn) { btn.disabled = false; btn.textContent = "دخول إلى حسابي"; }
-}
 
     async function recheckStatus() {
       const savedPhone = localStorage.getItem("studzed_phone");
@@ -663,16 +657,22 @@
       }
     }
 
+    function openOfferModalById(offerId) {
+      const offer = offersData.find(o => String(o.id) === String(offerId));
+      if (!offer) return;
+      openOfferModal(offer);
+    }
+
     function renderSpotlight() {
       const spotlightContainer = document.getElementById('spotlight-scroll');
       spotlightContainer.innerHTML = '';
-      
+
       if (offersData.length === 0) return;
 
       [...offersData].reverse().slice(0, 5).forEach(offer => {
         const img = offer.image || "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=150";
         spotlightContainer.innerHTML += `
-          <div onclick='openOfferModal(${JSON.stringify(offer).replace(/'/g, "&apos;")})' class="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl p-3 min-w-[140px] max-w-[140px] shrink-0 shadow-sm cursor-pointer hover:border-indigo-500 transition active:scale-95">
+          <div onclick="openOfferModalById('${String(offer.id).replace(/'/g, "\\'")}')" class="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-2xl p-3 min-w-[140px] max-w-[140px] shrink-0 shadow-sm cursor-pointer hover:border-indigo-500 transition active:scale-95">
             <img src="${img}" class="w-full h-20 rounded-xl object-cover mb-2" />
             <h4 dir="auto" class="font-extrabold text-xs text-slate-900 dark:text-white truncate text-right">${offer.name}</h4>
             <span class="text-[10px] text-emerald-600 dark:text-emerald-400 font-bold block mt-0.5">${offer.discount}</span>
@@ -737,7 +737,7 @@
 
       const filtered = offersData.filter(o => {
         const matchCat = currentCategory === 'all' || (currentCategory === 'favorites' ? favorites.includes(o.name) : o.category === currentCategory);
-        const matchSearch = o.name.toLowerCase().includes(search) || o.desc.toLowerCase().includes(search);
+        const matchSearch = String(o.name || '').toLowerCase().includes(search) || String(o.desc || '').toLowerCase().includes(search);
         return matchCat && matchSearch;
       });
 
@@ -753,9 +753,11 @@
 
         const isLongDesc = offer.desc && offer.desc.length > 30;
         const shortDesc = isLongDesc ? offer.desc.substring(0, 27) + "..." : offer.desc;
+        const safeName = String(offer.name || '').replace(/'/g, "\\'");
+        const safeId = String(offer.id || '').replace(/'/g, "\\'");
 
         list.innerHTML += `
-          <div onclick='openOfferModal(${JSON.stringify(offer).replace(/'/g, "&apos;")})' class="bg-white dark:bg-slate-900 rounded-2xl p-3.5 border border-slate-100 dark:border-slate-800 shadow-sm flex justify-between items-center gap-2.5 cursor-pointer hover:border-indigo-500 transition active:scale-[0.99]">
+          <div onclick="openOfferModalById('${safeId}')" class="bg-white dark:bg-slate-900 rounded-2xl p-3.5 border border-slate-100 dark:border-slate-800 shadow-sm flex justify-between items-center gap-2.5 cursor-pointer hover:border-indigo-500 transition active:scale-[0.99]">
             <div class="flex items-center gap-3 flex-1 min-w-0">
               <img src="${shopImg}" alt="${offer.name}" class="w-14 h-14 rounded-full object-cover border-2 border-indigo-100 dark:border-slate-700 shrink-0 shadow-sm" />
               <div class="space-y-1 flex-1 min-w-0">
@@ -769,7 +771,7 @@
               </div>
             </div>
             <div class="text-center shrink-0 flex flex-col items-end gap-2">
-              <button onclick="event.stopPropagation(); toggleFavorite('${offer.name}')" class="text-lg p-1 leading-none">${isFav ? '❤️' : '🤍'}</button>
+              <button onclick="event.stopPropagation(); toggleFavorite('${safeName}')" class="text-lg p-1 leading-none">${isFav ? '❤️' : '🤍'}</button>
               <div class="bg-emerald-500 text-white font-extrabold text-[11px] px-2.5 py-1.5 rounded-xl shadow-sm whitespace-nowrap">${offer.discount}</div>
             </div>
           </div>
@@ -981,6 +983,7 @@
         document.getElementById('qr-progress').style.width = ((timeLeft / 30) * 100) + '%';
       }, 1000);
     }
+
     window.onload = () => {
       const savedPhone = localStorage.getItem("studzed_phone");
       if (savedPhone) {
